@@ -1,0 +1,56 @@
+import java.util.Scanner;
+
+class Capital 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the name of the country whose capital you want to know from below list.....");
+		System.out.println("India");
+		System.out.println("United State");
+		System.out.println("United Kingdom");
+		System.out.println("Canada");
+		System.out.println("Australia");
+		System.out.println("Germany");
+		System.out.println("France");
+		System.out.println("Japan");
+		System.out.println("Brazil");
+		System.out.println("South Africa");
+		System.out.println("------------------------------");
+		System.out.println("------------------------------");
+		
+		String country=sc.nextLine();
+		String capital;
+		
+		switch(country){
+			case "India":
+				capital="New Delhi";
+			break;
+			
+			case "United State":
+				capital="Washington, D.C.";
+			break;
+			
+			case "United Kingdom":
+				capital="London";
+			break;
+			
+			case "Canada":
+				capital="Ottawa";
+			break;
+			
+			case "Australia":
+				capital="Canberra";
+			break;
+			
+			
+			default:
+				capital="capital not found";
+			
+			
+		}
+		System.out.println(country +" : "+capital);
+		
+		
+	}
+}
