@@ -1,0 +1,17 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.parent{
+    width: 50vw;
+    height: 50vh;
+    background-color: aqua;
+    margin: 200px;
+    padding: 50px;
+    
+}
+h1{
+    font-style: italic;
+    font-weight: bold;
+}
