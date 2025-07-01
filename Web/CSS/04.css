@@ -9,9 +9,14 @@
     background-color: aqua;
     margin: 200px;
     padding: 50px;
+    border: 20px green solid;
     
 }
 h1{
     font-style: italic;
     font-weight: bold;
+    text-align: center;
+    border: 20px;
+    border-color:black;
+    border-style: solid;
 }
