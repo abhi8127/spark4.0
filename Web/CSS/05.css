@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#lion{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}
+
+h1{
+    display: inline;
+    width: 200px;
+    height: 200px;
+}
+/* By default:
+
+Block-level elements (like <div>, <p>, <section>) respect width and height.
+
+Inline elements (like <span>, <a>, <strong>) do not respect width and height.
+
+So, if you convert a block-level element to display: inline, it behaves like an inline element, meaning:
+
+ width and height will have no effect. */
+a{
+    display: block;
+}
