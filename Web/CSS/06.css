@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#yellow{
+    width: 70px;
+    height: 50px;
+    background-color: yellow;
+}
+
+#red{
+    position: absolute;
+    top: 1%;
+    width: 80px;
+    height: 50px;
+    background-color: red;
+}
+
+#green{
+    width: 70px;
+    height: 90px;
+    background-color: green;
+}
