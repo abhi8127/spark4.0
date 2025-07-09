@@ -6,7 +6,7 @@ import java.sql.Statement;
 public class JDBCDemo {
     public static void main(String[] args) {
         try {
-            // Load MySQL JDBC Driver
+            //  it is used to Load MySQL JDBC Driver
             Class.forName("com.mysql.cj.jdbc.Driver");
 
             // Establish a connection to the database (URL, username, password)
