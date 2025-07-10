@@ -15,7 +15,12 @@ public class JDBCInsertDemo {
             // its create a statment object to execute sql query
             Statement statement = con.createStatement();
 
-            String query = "insert into student (id,stdName,age) values (5,'sanju',22)";
+            /*
+            Here we are explicitly telling SQL the order of columns you're inserting into.
+            The order in the table schema (id,stdName,age) doesn't matter.
+             SQL will match values based on the column names you mention, not their original order.
+             */
+            String query = "insert into student (id,age,stdName) values (30,-5,'Indrajeet')";
 
             //execute the insert sql query using executeUpdate() which return no of row affected
             int update = statement.executeUpdate(query);
