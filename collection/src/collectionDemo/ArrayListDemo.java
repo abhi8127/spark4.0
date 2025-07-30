@@ -1,6 +1,7 @@
 package collectionDemo;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class ArrayListDemo {
     public static void main(String[] args) {
@@ -25,6 +26,28 @@ public class ArrayListDemo {
         else
         {
             System.out.println("Not Empty.....");
+        }
+
+        /*
+        This iterator is used for traverse over any collection
+        and here also we delete element from collection using this iterator unlike Enumarator
+         */
+        Iterator<Integer> it =arr1.iterator();
+
+        System.out.println("now we are using iterator to traverse over the list");
+
+        while(it.hasNext())
+        {
+            int data=it.next();
+            if(data==20)
+            {
+                it.remove();
+                System.out.println("Removed :"+data);
+            }
+            else
+            {
+                System.out.println(data);
+            }
         }
     }
 }
