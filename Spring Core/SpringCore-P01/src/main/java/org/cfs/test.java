@@ -11,7 +11,23 @@ public class test {
 
 
         System.out.println("Sending request..........");
+/*
         Car car=context.getBean(Car.class);
         car.drive();
+
+ */
+
+        // checking for scope
+        System.out.println("--------first object creation-----------");
+
+        Car car1=context.getBean(Car.class);
+
+        System.out.println("--------Second object creation-----------");
+
+        Car car2=context.getBean(Car.class);
+
+        System.out.println("Same object ? "+(car1==car2));
+
+
     }
 }
