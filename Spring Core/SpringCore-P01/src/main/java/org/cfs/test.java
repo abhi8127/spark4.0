@@ -26,7 +26,21 @@ public class test {
 
         Car car2=context.getBean(Car.class);
 
-        System.out.println("Same object ? "+(car1==car2));
+        System.out.println("Same car object ? "+(car1==car2));
+
+
+
+        System.out.println("--------first object creation for PetrolEngine-----------");
+
+        PetrolEngine p1=context.getBean(PetrolEngine.class);
+
+        System.out.println("--------Second object creation for PetroEngine-----------");
+
+        PetrolEngine p2=context.getBean(PetrolEngine.class);
+
+        System.out.println("Same PetrolEngine object ? "+(p1==p2));
+
+
 
 
     }

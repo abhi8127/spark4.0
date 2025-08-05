@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
                            http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="PetrolEng"  class="org.cfs.PetrolEngine"/>
+    <bean id="PetrolEng"  class="org.cfs.PetrolEngine" scope="prototype"/>
     <bean id="car" class="org.cfs.Car">
 
        <!--  <property name="engine" ref="PetrolEng"> </property>       -->
